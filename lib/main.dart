@@ -38,11 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title)
       ),
-      body: Center(
-        child: RiveAnimation.network(
-          'https://api.gympro.uz/v1/storage/buckets/rive/files/67cbf43200111590d996/download?project=btc&project=btc'
-        )
-      )
+      body: Center(child: RiveAnimation.asset('network.riv'))
     );
   }
 }
