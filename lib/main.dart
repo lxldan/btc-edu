@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       body: Center(
-        child: RiveAnimation.asset('rive/network.riv')
+        child: RiveAnimation.network('https://api.gympro.uz/v1/storage/buckets/rive/files/67cbf43200111590d996/download?project=btc&project=btc&mode=admin')
       )
     );
   }
