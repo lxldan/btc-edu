@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: RiveAnimation.network(
-          'https://api.gympro.uz/v1/storage/buckets/rive/files/67cbf43200111590d996/download?project=btc&project=btc&mode=admin',
+          'https://195f87c076ef4482b8ac66e594519691.storage.msk.3hcloud.com/rive/untitled.riv',
         )
       ),
       // floatingActionButton: FloatingActionButton(
