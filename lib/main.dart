@@ -40,9 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       body: Center(
-        child: RiveAnimation.network(
-          'https://cdn.rive.app/animations/vehicles.riv',
-        )
+        child: RiveAnimation.asset('rive/network.riv')
       )
     );
   }
