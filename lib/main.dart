@@ -38,7 +38,11 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title)
       ),
-      body: Center(child: RiveAnimation.asset('network.riv'))
+      body: Center(
+        child: RiveAnimation.asset(
+          'rive/network.riv'
+        )
+      )
     );
   }
 }
