@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: RiveAnimation.asset(
-          'rive/network.riv'
+           'assets/network.riv'
         )
       )
     );
