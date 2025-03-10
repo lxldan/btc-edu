@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: RiveAnimation.network(
-          'https://wkoghhjwpryqvljnbshj.supabase.co/storage/v1/object/public/test//untitled.riv',
+          'https://wkoghhjwpryqvljnbshj.supabase.co/storage/v1/object/sign/rive/untitled.riv?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJyaXZlL3VudGl0bGVkLnJpdiIsImlhdCI6MTc0MTU3ODgwOSwiZXhwIjoyMDU2OTM4ODA5fQ.d7L9lBeEhKuqVODdbaB8c83WuKmIV5JrnPQxKMelA3M',
         )
       )
     );
