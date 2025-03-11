@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
+import 'package:web/web.dart' show window;
 
 void main() {
+  final document = window.document;
+  print(document);
   runApp(const MyApp());
 }
 
@@ -31,7 +34,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,8 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: RiveAnimation.network(
           'https://wkoghhjwpryqvljnbshj.supabase.co/storage/v1/object/public/test//untitled.riv',
-        )
-      )
+        ),
+      ),
     );
   }
 }
