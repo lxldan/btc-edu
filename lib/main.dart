@@ -1,10 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
-import 'package:web/web.dart' show window;
+import 'package:telegram_web_app/telegram_web_app.dart';
 
 void main() {
-  final document = window.document;
-  print(document);
   runApp(const MyApp());
 }
 
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bitcoin Edu Platform',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -40,6 +41,19 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        actions: [
+          IconButton(
+            onPressed: () {
+              if (TelegramWebApp.instance.isSupported) {
+                print(TelegramWebApp.instance.initData.toString());
+                print(TelegramWebApp.instance.version);
+              } else {
+                print('It is not launched as TG mini app');
+              }
+            },
+            icon: Icon(Icons.info),
+          ),
+        ],
       ),
       body: Center(
         child: RiveAnimation.network(
